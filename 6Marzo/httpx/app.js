@@ -9,7 +9,7 @@ const url = 'https://api.darksky.net/forecast/4542350ba52da2433a85f5789bb378cf/1
 // request tiene dos parametros 
 // 1.- Un object literal si solo tengo un value puedi dejarlo sin su key en caso de que sean dos o mas pues e ponen sus respectivos key: value
 // 2.- Es un callback que se llama en caso de que haya un error
-request({url: url, json: true}, (error, response) => {
+request({url, json: true}, (error, response) => {
     // Validó si existe un erro (si no hay error) entonces ejecuto mi respuesta
     if(!error){
        
